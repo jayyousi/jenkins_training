@@ -10,7 +10,7 @@ node {
     }
     
     stage('Maven build') {
-        def mvnHome = tool 'maven-3'
+        def mvnHome = tool 'Training'
         sh "${mvnHome}/bin/mvn clean install -DskipTests"
     }
 }
